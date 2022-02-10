@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(0, 126, 175);
+            color: rgb(187, 199, 22);
+        }
+    </style>
+</head>
+<body>
+   <h1>Conversão de tipos de dados</h1>
+   <p>Em Js é possível converter numbers em strings e vice-e-versa. Para o primeiro caso, é necessário usar <code>Number()</code>, na qual os parênteses abarcarão todo o conteúdo à frente. Para o segundo caso, usa-se <code>String()</code> ou <code>toString().</code></p>
+   <p>No exemplo abaixo JS vai considerar os dados como strings, msm se tratando de numbers</p>
+   <p>
+       
+        <pre>
+            <code>
+                var n1 = window.prompt('Digite um número:')
+                var n2 = window.prompt('Digite outro número:')
+                var s = n1 + n2
+                window.alert('a soma dos valores é: ' + s)
+            </code>
+        </pre>
+       
+   </p>
+   <p>Já no exemplo abaixo JS vai tratar os dados como numbers:</p>
+   <p>
+       
+        <pre>
+            <code>
+                var n1 = <strong>Number</strong>(window.prompt('Digite um número:'))
+                var n2 = <strong>Number</strong>(window.prompt('Digite outro número:'))
+                var s = n1 + n2
+                window.alert('a soma dos valores é: ' + s) 
+            </code>
+        </pre>
+       
+   </p>
+    <script>
+        // Esse símbolo serve para comentários de uma linha apenas
+        /* Essa simbologia serve para comentários de mais de uma linha */
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var s = n1 + n2
+        window.alert('a soma dos valores é: ' + (s)) 
+      
+    </script>
+</body>
+</html>
