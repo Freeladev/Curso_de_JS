@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JS</title>
+    <style>
+        body {
+            background-color: rgb(8, 121, 27);
+            color: rgb(207, 212, 126);
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros Passos em DOM</h1>
+    <p id = 'msg'>Aqui vai o resultado</p>
+    <p>teste</p>
+    <p>teste 2</p>
+    <p>ainda testando</p>
+    <div>Clique em mim</div>
+    <script>
+     var titulo = document.getElementsByTagName('h1')[0]
+     document.write(titulo.innerText)
+     titulo.style.color = 'black'
+
+     var corpo = document.body.style
+
+     corpo.background = 'gray'
+     corpo.color = 'black'
+     corpo.fontFamily = 'Times New Roman'
+     
+     /*var par = document.getElementById('msg')
+     par.style.color = 'white'
+     par.innerText = 'Estou pegando o jeito'
+     par.innerText = 'Treinando'
+     par.innerText = 'ainda treinando'
+     par.innerText = 'Ainda treinando'
+     par.innerText = 'ainda treinando'
+     par.innerText = 'AINDA TREINANDO'*/
+
+     //A forma mais usada de fazer isso é usando o querySelector.
+
+     var par = document.querySelector('p#msg')
+     par.style.background = 'gold'
+     
+    </script>
+</body>
+</html>
